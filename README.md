@@ -22,7 +22,15 @@ require(['jbinary', 'TAR'], function(jBinary, TAR){
 });
 ```
 
-```
+```js
+// Gruntfile.js
+module.exports = function (grunt) {
+  require('load-grunt-config')(grunt, {
+    data: {
+      pkgName: 'jbinary'
+    }
+  });
+};
 ```
 
 ```
